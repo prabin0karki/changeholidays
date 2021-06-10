@@ -1,0 +1,74 @@
+@import 'styles/Variables.module.sass'
+
+.heroCard
+  padding: 55px 70px
+  background: white
+  border-radius: 8px
+  box-shadow: 0 8px 15px #00000014
+  width: 100%
+  transform: translateY(-50%)
+  display: flex
+  justify-content: space-between
+
+  .cardRight
+    display: flex
+    align-items: center
+
+  .dimText
+    color: $dimText
+    text-transform: uppercase
+
+  .title
+    text-transform: uppercase
+    font-family: "Montserrat"
+    margin-top: 20px
+    color: $titleText
+
+  .date
+    text-transform: uppercase
+    text-align: right
+    font-weight: bold
+    margin-top: 6px
+
+  .button
+    width: 64px
+    height: 64px
+    background: $themeBrown
+    font-size: 14px
+    border: none
+    border-radius: 8px
+    margin-left: 40px
+
+    svg
+      color: white
+      height: 20px
+      width: 20px
+
+@media screen and ( max-width: 768px )
+  .heroCard
+    padding: 25px 30px
+
+    .dimText
+      font-size: 13px
+
+    .title
+      font-size: 24px
+      margin-top: 0
+
+    .button
+      width: 50px
+      height: 50px
+
+      svg
+        width: 15px
+        height: 15px
+
+@media screen and ( max-width: 640px )
+  .heroCard
+    flex-direction: column
+
+    .cardRight
+      justify-content: space-between
+
+    .date
+      text-align: left

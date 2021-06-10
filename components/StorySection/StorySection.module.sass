@@ -1,0 +1,36 @@
+@import 'styles/Variables.module.sass'
+.storySection
+  padding: 75px 0
+  h2
+    margin-bottom: 60px
+    margin-top: 0
+
+  .stories
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 30px
+
+.seeMoreLink
+  color: $themeBrown
+  border: 2px solid #DEDEDE
+  border-radius: 50px
+  padding: 14px 20px
+  display: block
+  width: max-content
+  margin: 0 auto
+  margin-top: 54px
+
+  span
+    margin-left: 7px
+
+    svg
+      height: 12px
+      width: 12px
+
+@media screen and ( max-width: 640px )
+  .storySection
+    padding-top: 10px
+    padding-bottom: 10px
+
+    .stories
+      grid-template-columns: auto

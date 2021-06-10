@@ -1,0 +1,100 @@
+/* @font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  src: local("Montserrat"), url(/fonts/montserrat/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(/fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(/fonts/lato/Lato-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* .packages .swiper-button-prev {
+  top: -130px;
+  right: 0;
+}
+
+.packages .swiper-button-prev::after {
+  background: #B69067;
+  z-index: 333333;
+} */
+
+/* Change swiper slider's buttons globally */
+.swiper-button-prev,
+.swiper-button-next {
+  background: #B69067;
+  width: 56px !important;
+  height: 56px !important;
+  padding: 16px;
+  border-radius: 6px;
+  color: white !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 0 !important;
+  top: 0 !important;  
+}
+
+.swiper-button-prev {
+  right: 85px !important;
+  left: auto !important;
+}
+/* Custom Swiper for Testimonials */
+
+
+.custom-swiper-testimonial .swiper-container {
+  padding-bottom: 50px;
+}
+
+.custom-swiper-testimonial .swiper-pagination {
+  bottom: 0;
+}
+
+.custom-swiper-testimonial .swiper-pagination-bullet {
+  width: 28px;
+  height: 2px;
+  background: #B69067;
+}
+
+/* Custom Swiper for Packages */
+.packages .swiper-container {
+  padding-top: 128px;
+}

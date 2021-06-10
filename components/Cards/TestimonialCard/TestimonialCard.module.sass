@@ -1,0 +1,72 @@
+@import 'styles/Variables.module.sass'
+
+.testimonialCard
+  width: 100%
+  display: grid
+  grid-template-columns: auto
+  grid-gap: 30px
+
+  img
+    display: block
+    height: 40vh
+    border-radius: 8px
+    width: 50%
+    object-fit: cover
+
+  .cardRight
+    display: flex
+    align-items: center
+
+    .testimonialTitle
+      position: absolute
+      top: 70px
+      right: 10px
+      margin-bottom: 0
+      max-width: 240px
+      text-align: right
+      font-size: 26px
+
+      &::before
+        right: 0
+  
+  .name
+    font-size: 24px
+    line-height: 20px
+    font-weight: bold
+
+  .designation
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 20px
+    color: #9DAFC2
+    margin-top: 8px
+
+  .rating
+    color: $themeBrown
+    margin-bottom: 15px
+
+    svg
+      width: 24px
+
+@media( min-width: 860px )
+  .testimonialCard
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 64px
+
+    img
+      width: 100%
+      height: 592px
+
+    .cardRight
+      
+      .testimonialTitle
+        top: 0
+        right: initial
+        font-size: 40px
+        text-align: initial
+        margin: 0
+
+        &::before
+          left: 0
+        
+        
